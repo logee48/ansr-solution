@@ -5,8 +5,13 @@ i tried using it, but ended up wasting one whole day.**
 
 So for auth purpose i used 
 > jwt(JSON web tokens).
+
 For backend
 > Node js and Express js
+
+For frontend
+> React JS
+
 For Database
 > MongoDB
 
@@ -22,5 +27,5 @@ And
 npm start
 ```
 
-project is live in
+project will be live in
 https://localhost:3000
