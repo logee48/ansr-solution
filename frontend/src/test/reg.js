@@ -19,12 +19,15 @@ function Reg (){
     
 
     return(
-        <div>
-            <input value={name} onChange={(e)=>{setname(e.target.value)}}></input>
-            <input value={email} onChange={(e)=>{setemail(e.target.value)}}></input>
-            <input value={password} onChange={(e)=>{setpassword(e.target.value)}}></input>
-            <button onClick={regg}>submit</button>
-            {mess === "error boiii"?<div>server error</div>:mess === ""?<div></div>:<Link to="/new1/login"><div>go to login</div></Link>}
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",padding:"250px"}}>
+            <div style={{display:"grid",gridTemplateColumns:"auto"}}>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px",fontSize:"50px"}}>regester</div>
+                <div style={{padding:"8px"}}><input style={{width:"400px",padding:"10px"}} value={name} placeholder="email..." onChange={(e)=>{setname(e.target.value)}}></input></div>
+                <div style={{padding:"8px"}}><input style={{width:"400px",padding:"10px"}} value={email} placeholder="username..." onChange={(e)=>{setemail(e.target.value)}}></input></div>
+                <div style={{padding:"8px"}}><input style={{width:"400px",padding:"10px"}} value={password} placeholder="password..." onChange={(e)=>{setpassword(e.target.value)}}></input></div>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px"}}><button style={{width:"400px",padding:"10px"}} onClick={regg}>submit</button></div>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px"}}>{mess === "error boiii"?<div>server error</div>:mess === ""?<div></div>:<Link to="/new1/login"><button style={{width:"400px",padding:"10px",backgroundColor:"lightgreen"}}>account created go to login</button></Link>}</div>
+            </div>
         </div>
     )
 }

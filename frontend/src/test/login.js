@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
 
@@ -7,9 +7,6 @@ function Login (){
     const [password, setpassword] = useState("")
     const [token,settoken] = useState("")
     const [mess,setmess] = useState("")
-    // const logincheck = async()=>{
-    //     await axios.delete(`/api/login`)
-    // }
     const fetchDataa = async () => {
         const a = {
             email:email,
@@ -20,11 +17,14 @@ function Login (){
       }
     console.log(mess,token);
     return(
-        <div>
-            <input value={email} onChange={(e)=>{setemail(e.target.value)}}></input>
-            <input value={password} onChange={(e)=>{setpassword(e.target.value)}}></input>
-            <button onClick={fetchDataa}>submit</button>
-            {mess==="password wrong"?<div>enter correct password</div>:mess==="no user found"?<Link to="/new1/reg"><div>regester</div></Link>:mess===""?<></>:<div><Link to={`/new1/home/${token}/${email}`}><div>verified</div></Link><div>{token}</div></div>}
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",padding:"250px"}}>
+            <div style={{display:"grid",gridTemplateColumns:"auto"}}>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px",fontSize:"50px"}}>Login</div>
+                <div style={{padding:"8px"}}><input style={{width:"400px",padding:"10px"}} value={email} placeholder="username..." onChange={(e)=>{setemail(e.target.value)}}></input></div>
+                <div style={{padding:"8px"}}><input style={{width:"400px",padding:"10px"}} value={password} placeholder="password..." onChange={(e)=>{setpassword(e.target.value)}}></input></div>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px"}}><button style={{width:"400px",padding:"10px"}} onClick={fetchDataa}>check credientials</button></div>
+                <div style={{display:"flex",justifyContent:"center",alignContent:"center", padding:"8px"}}>{mess==="password wrong"?<div>enter correct password</div>:mess==="no user found"?<Link to="/new1/reg"><button style={{width:"400px",padding:"10px",backgroundColor:"red"}}>create new account</button></Link>:mess===""?<></>:<div><Link to={`/new1/home/${token}/${email}`}><button style={{width:"400px",padding:"10px",backgroundColor:"lightgreen"}}>verified, click here</button></Link></div>}</div>
+            </div>
         </div>
     )
 }

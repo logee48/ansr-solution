@@ -1,7 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import App from './App';
-import Neww from './Neww'
-import Share from "./Share";
+import Share from "./test/Share";
 import Home from './test/home'
 import Login from './test/login'
 import Reg from './test/reg'
@@ -13,8 +11,6 @@ function Routee()
     return (
         <>
             <Routes>
-                <Route path="/" element={<App/>}/>
-                <Route path="/new/:id" element={<Neww/>}/>
                 <Route path="/share/:id" element={<Share/>}/>
                 <Route path="/new1/login" element={<Login/>}/>
                 <Route path="/new1/reg" element={<Reg/>}/>
