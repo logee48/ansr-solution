@@ -20,11 +20,11 @@ For Database
 
 To Run the project
 Open frontend and server folder in different directory
-use
+
+## use
 ```
 npm install
 ```
-And 
 ```
 npm start
 ```
