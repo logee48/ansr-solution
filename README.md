@@ -1,5 +1,7 @@
 # Note-it
 
+used MERN stack - this a notes taking web application with proper auth
+
 <img src="./img.png"></img>
 
 So for auth purpose i used 
