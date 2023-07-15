@@ -8,9 +8,6 @@ const jwt = require('jsonwebtoken')
 app = express()
 app.use(express.json())
 
-app.get("/api",(req,res)=>{
-    res.json([{name:'charan',age:69}])
-})
 
 app.post("/api/store",async(req,res)=>{
     try{
