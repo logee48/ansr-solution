@@ -34,15 +34,15 @@ function Edit(){
     }, []);
     
     return(
-        <div style={{display:"flex",alignContent:"center",justifyContent:"center"}}>
+        <div style={{display:"flex",alignContent:"center",justifyContent:"center",backgroundColor:"#FFD9EF",height:"100vh"}}>
             <div style={{display:"grid",gridTemplateColumns:"auto"}}>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",fontSize:"50px"}}>edit your note</div>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",padding:"10px"}}><input style={{width:"400px",padding:"5px"}} value={title} onChange={(e)=>{settitle(e.target.value)}}></input></div>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",padding:"10px"}}><textarea style={{width:"400px",padding:"5px",height:"150px"}} value={notes} onChange={(e)=>{setnotes(e.target.value)}}></textarea></div>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",padding:"5px"}}><button style={{width:'400px',padding:"5px"}} onClick={updateusingid}>update</button></div>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",padding:"5px"}}><button style={{width:'400px',padding:"5px"}} onClick={deleteusingid}>delete</button></div>
-                <div style={{display:"flex",justifyContent:'center',alignContent:"center",padding:"5px"}}><button style={{width:'400px',padding:"5px"}} onClick={sharelinkusingid}>share</button></div>
-                <div style={{display:"flex"}}><div onClick={()=>{navigator.clipboard.writeText(this.state.textToCopy)}}style={{display:"flex",justifyContent:"center",alignContent:"center",padding:"10px"}}>{linkk}</div>{linkk !== ""?<div style={{padding:"6px"}}><button onClick={copyToClipboard}>copy</button></div>:""}</div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",fontSize:"60px",position:"relative",top:"10px",marginBottom:"50px"}} id="fontthingy">Noteit</div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",position:'relative',top:'-20px'}}><input style={{width:"500px",padding:"5px",height:"30px",fontFamily:'Inconsolata, monospace',fontSize:"20px"}} value={title} onChange={(e)=>{settitle(e.target.value)}}></input></div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",position:'relative',top:'-50px'}}><textarea style={{width:"500px",padding:"5px",height:"150px",fontFamily:'Inconsolata, monospace',fontSize:"20px"}} value={notes} onChange={(e)=>{setnotes(e.target.value)}}></textarea></div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",position:'relative',top:'-80px'}}><button id="fontthingy1" style={{width:'500px',padding:"5px",height:"50px",borderRadius:"50px",borderStyle:"none",backgroundColor:"#E766B0",color:"white",fontSize:"20px"}} onClick={updateusingid}>update</button></div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",position:'relative',top:'-110px'}}><button id="fontthingy1" style={{width:'500px',padding:"5px",height:"50px",borderRadius:"50px",borderStyle:"none",backgroundColor:"#E766B0",color:"white",fontSize:"20px"}} onClick={deleteusingid}>delete</button></div>
+                <div style={{display:"flex",justifyContent:'center',alignContent:"center",position:'relative',top:'-140px'}}><button id="fontthingy1" style={{width:'500px',padding:"5px",height:"50px",borderRadius:"50px",borderStyle:"none",backgroundColor:"#E766B0",color:"white",fontSize:"20px"}} onClick={sharelinkusingid}>share</button></div>
+                <div style={{display:"flex",position:'relative',top:'-170px'}}><div onClick={()=>{navigator.clipboard.writeText(this.state.textToCopy)}}style={{display:"flex",justifyContent:"center",alignContent:"center",padding:"10px"}}>{linkk}</div>{linkk !== ""?<div style={{padding:"2px"}}><button onClick={copyToClipboard} style={{borderRadius:"10px",borderStyle:"none",backgroundColor:"#BC3081",color:"white",width:"100px",height:"30px"}}>copy</button></div>:""}</div>
             </div>
         </div>
     )

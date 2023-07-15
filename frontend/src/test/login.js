@@ -2,6 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import { Link } from "react-router-dom"
 import img1 from './img/img1.png'
+import './App.css'
 
 function Login (){
     const [email,setemail] = useState("")
@@ -31,7 +32,7 @@ function Login (){
         <div style={{display:"flex",height:"100vh"}}>
             <div style={{backgroundColor:"rgb(58,58,58)",width:"400px",display:"flex",justifyContent:'center',alignContent:"center"}}>
                 <div style={{position:"relative",top:"25vh"}}>
-                    <div style={{fontSize:"40px",marginBottom:"20px",color:"white",display:"flex",justifyContent:"center"}}>noteit</div>
+                    <div id="fontthingy" style={{fontSize:"60px",marginBottom:"20px",color:"white",display:"flex",justifyContent:"center"}}>Noteit</div>
                     <div><input placeholder="email..." style={{height:"30px",width:"300px",marginBottom:"20px"}} onChange={(e)=>{setemail(e.target.value)}}></input></div>
                     <div><input placeholder="password..." style={{height:"30px",width:"300px",marginBottom:"20px"}} onChange={(e)=>{setpassword(e.target.value)}}></input></div>
                     <div><button style={{height:"40px",width:"300px",borderRadius:"50px",borderStyle:"none",marginBottom:"20px",backgroundColor:"#E766B0",color:"white"}} onClick={fetchDataa}>log-in</button></div>

@@ -34,7 +34,7 @@ function Reg (){
         <div style={{display:"flex",height:"100vh"}}>
             <div style={{backgroundColor:"rgb(58,58,58)",width:"400px",display:"flex",justifyContent:'center',alignContent:"center"}}>
                 <div style={{position:"relative",top:"25vh"}}>
-                    <div style={{fontSize:"40px",marginBottom:"20px",color:"white",display:"flex",justifyContent:"center"}}>noteit</div>
+                    <div style={{fontSize:"60px",marginBottom:"20px",color:"white",display:"flex",justifyContent:"center"}} id="fontthingy">Noteit</div>
                     <div><input placeholder="email..." style={{height:"30px",width:"300px",marginBottom:"20px"}} onChange={(e)=>{setname(e.target.value)}}></input></div>
                     <div><input placeholder="username..." style={{height:"30px",width:"300px",marginBottom:"20px"}} onChange={(e)=>{setemail(e.target.value)}}></input></div>
                     <div><input placeholder="password..." style={{height:"30px",width:"300px",marginBottom:"20px"}} onChange={(e)=>{setpassword(e.target.value)}}></input></div>

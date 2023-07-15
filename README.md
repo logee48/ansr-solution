@@ -1,7 +1,6 @@
-# ansr-solution assessment
+# Note-it
 
-**Just so you know i have never used passport js,<br>
-i tried using it, but ended up wasting one whole day.**
+<img src="./img.png"></img>
 
 So for auth purpose i used 
 > jwt(JSON web tokens).

@@ -5,3 +5,20 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+#fontthingy{
+    font-family: 'Indie Flower', cursive;
+}
+#fontthingy1{
+    font-family: 'Inconsolata', monospace;
+}
+#fontthingy2{
+    font-family: 'Montserrat', sans-serif;
+}
