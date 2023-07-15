@@ -1,6 +1,7 @@
 # Note-it
 
-used MERN stack - this is a notes taking web application with proper authentication
+used MERN stack - this is a notes taking web application with proper authentication<br>
+[ui link](https://www.figma.com/file/Snz1OtK8LHEaxfRG2lG6Xj/noteit?type=design&node-id=17%3A27&mode=design&t=tyc1goX4tIgOldz3-1)
 
 <img src="./img.png"></img>
 
