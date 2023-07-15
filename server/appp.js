@@ -177,4 +177,4 @@ app.get("/api/dumb",async(req,res)=>{
 
 
 app.listen(4000)
-mongodb.connect("mongodb+srv://210701134:R0eSEiT8rCFiMLLp@whyrugay.v4wp0gj.mongodb.net/charan?retryWrites=true&w=majority").then(()=>{console.log("connected");})
+mongodb.connect("#####").then(()=>{console.log("connected");})
