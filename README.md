@@ -1,6 +1,6 @@
 # Note-it
 
-used MERN stack - this a notes taking web application with proper auth
+used MERN stack - this is a notes taking web application with proper authentication
 
 <img src="./img.png"></img>
 
